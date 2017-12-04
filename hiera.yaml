@@ -1,0 +1,10 @@
+:merge_behavior:
+  - deeper
+:backends:
+  - yaml
+:yaml:
+  :datadir: "/etc/puppet/hieradata"
+:hierarchy:
+  - "nodes/%{::trusted.certname}"
+  - "osfamily/%{osfamily}"
+  - "common"

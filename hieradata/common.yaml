@@ -1,0 +1,14 @@
+---
+sshservicename: sshd
+
+extrapacks:
+  tmux:
+    ensure: installed
+  htop:
+    ensure: installed
+  strace:
+    ensure: installed
+  git:
+    ensure: installed
+  git-cola:
+    ensure: installed

@@ -1,0 +1,8 @@
+---
+sshservicename: sshdredhat
+
+extrapacks:
+  iotop:
+    ensure: latest
+  bash:
+    ensure: latest

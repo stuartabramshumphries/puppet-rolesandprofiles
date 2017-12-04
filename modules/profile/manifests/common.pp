@@ -1,5 +1,5 @@
 class profile::common {
-  $extras=['tmux','git','strace','htop','git-cola']
-  package { $extras: ensure => 'installed' }
-  include ntp
+$packs=hiera_hash('extrapacks')
+create_resources('package',$packs)
+ include ntp
 }
